@@ -27,8 +27,8 @@ const Projects = () => {
         "An interactive 3D portfolio website using Three.js and React. Includes animated 3D models, particle systems, and smooth transitions.",
       technologies: ["React", "Three.js", "Firebase", "JavaScript"],
       image: "https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg",
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://hemssportfolio.netlify.app/",
+      githubUrl: "https://github.com/Hem1234567/Hem-s-Portfolio.git",
       featured: true,
     },
     {
@@ -111,7 +111,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p
-            className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
+            className="text-xl text-gray-300 max-w-3xl mx-auto"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -133,7 +133,7 @@ const Projects = () => {
               className={`px-4 py-2 rounded-full font-medium transition-all duration-300 
                 ${
                   activeCategory === category
-                    ? "bg-gradient-to-r  from-blue-500 to-orange-400 text-white"
+                    ? "bg-gradient-to-r from-blue-500 to-orange-400 text-white"
                     : "bg-gray-100 text-gray-800 dark:bg-gray-300 dark:text-black hover:bg-gray-200 dark:hover:bg-gray-100 hover:shadow-2xl"
                 }`}
             >
@@ -148,7 +148,7 @@ const Projects = () => {
             <div
               key={project.id}
               onMouseEnter={() => setActiveProject(index)}
-              className="group overflow-hidden shadow-lg hover:shadow-2xl transition-transform duration-500 transform hover:-translate-y-2 bg-white dark:bg-transparent rounded-lg"
+              className="group overflow-hidden shadow-lg hover:shadow-2xl transition-transform duration-500 transform hover:-translate-y-2 bg-transparent rounded-lg"
               data-aos="fade-up"
               data-aos-delay={(index % 3) * 100}
             >
@@ -158,8 +158,8 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 right-4 flex gap-2">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:opacity-0 md:group-hover:opacity-100 opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="p-4 flex gap-2 w-full justify-start">
                     <a
                       href={project.liveUrl}
                       target="_blank"
@@ -189,17 +189,17 @@ const Projects = () => {
 
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm text-blue-600 dark:text-blue-400 font-semibold">
+                  <span className="text-sm text-blue-400 font-semibold">
                     {project.category}
                   </span>
-                  <FiExternalLink className="text-gray-400 group-hover:text-blue-600 transition-colors duration-300" />
+                  <FiExternalLink className="text-gray-200 group-hover:text-blue-600 transition-colors duration-300" />
                 </div>
 
-                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-yellow-300 transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-3 text-white group-hover:text-yellow-300 transition-colors duration-300">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed">
+                <p className="text-gray-300 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -207,7 +207,7 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-2 py-1 bg-gradient-to-r from-blue-200 to-orange-100 border-2 border-gray-400 bg-clip-text text-transparent  rounded-md text-xs"
+                      className="px-2 py-1 bg-gradient-to-r from-blue-200 to-orange-100 border-2 border-gray-200 bg-clip-text text-transparent  rounded-md text-xs"
                     >
                       {tech}
                     </span>

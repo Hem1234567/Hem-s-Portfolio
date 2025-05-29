@@ -44,7 +44,7 @@ const About = () => {
               About Me
             </h2>
             <p
-              className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-bold"
+              className="text-xl text-gray-300 max-w-3xl mx-auto font-bold"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -58,17 +58,17 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p
-                className="text-gray-600 dark:text-gray-300 leading-relaxed text-xl font-semibold"
+                className="text-gray-300 leading-relaxed text-xl font-semibold"
                 data-aos="fade-right"
               >
-                With over 5 years of experience in web development, I specialize
+                With over 2 years of experience in web development, I specialize
                 in creating modern, responsive applications that provide
                 exceptional user experiences. My journey started with a
                 curiosity about how websites work, and it has evolved into a
                 passion for crafting digital solutions.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-300 leading-relaxed text-xl font-semibold"
+                className="text-gray-300 leading-relaxed text-xl font-semibold"
                 data-aos="fade-right"
                 data-aos-delay="200"
               >
@@ -123,24 +123,24 @@ const About = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 bg-white dark:bg-transparent rounded-lg p-6 text-center "
+                className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 bg-transparent rounded-lg p-6 text-center "
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
                 <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-orange-400 rounded-full flex items-center justify-center text-white text-xl group-hover:scale-110 transition-transform duration-300">
                   {skill.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold mb-2 text-white">
                   {skill.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                <p className="text-gray-300 mb-4 text-sm">
                   {skill.description}
                 </p>
                 <div className="flex flex-wrap gap-2 justify-center">
                   {skill.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-2 py-1 bg-gradient-to-r from-blue-200 to-orange-100 border-2 border-gray-400 bg-clip-text text-transparent  rounded-md text-xs"
+                      className="px-2 py-1 bg-gradient-to-r from-blue-200 to-orange-100 border-2 border-gray-200 bg-clip-text text-transparent  rounded-md text-xs"
                     >
                       {tech}
                     </span>
