@@ -17,7 +17,11 @@ const Navbar = () => {
   const navItems = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
+    { href: "#tech-stack", label: "Tech Stack" },
+    { href: "#certifications", label: "Certifications" },
+    { href: "#timeline", label: "Timeline" },
     { href: "#projects", label: "Projects" },
+    { href: "#contributions", label: "Contributions" },
     { href: "#contact", label: "Contact" },
   ];
 

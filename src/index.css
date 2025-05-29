@@ -12,8 +12,9 @@
   transform-style: preserve-3d;
 }
 .bg-linear-gradient {
-  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(237, 95, 95, 1) 100%, rgba(252, 176, 69, 1) 100%);
+  background: linear-gradient(90deg, rgba(46, 0, 108, 1) 0%, rgba(51, 0, 102, 1) 50%, rgba(59, 0, 119, 1) 100%);
 }
+
 
 .glass-effect {
   background: rgba(255, 255, 255, 0.05);
